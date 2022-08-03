@@ -146,7 +146,7 @@ Response :
 }
 ```
 
-### Ganti Password
+### Change Password
 
 Request :
 
