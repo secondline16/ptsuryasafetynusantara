@@ -443,7 +443,7 @@ Response :
         "requirement_status": "string, [Lengkap, Belum Lengkap]",
         "training_certificate": "string, url [pdf]",
         "competence_certificate": "string, url [pdf]"
-	"whatapps_group": "string, nullable"
+	"whatsapp_group": "string, nullable"
       },
 }
 ```
