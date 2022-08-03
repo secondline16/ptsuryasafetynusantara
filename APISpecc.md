@@ -1,7 +1,3 @@
-### Link Figma : https://www.figma.com/file/ScC0RpkOxliszPPhXs5xcc/Prototyping-in-Figma?node-id=0%3A1
-### Link GitHub : https://github.com/secondline16/ptsuryasafetynusantara.git
-
-
 ### Login
 
 Request :
