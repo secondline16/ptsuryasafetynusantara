@@ -151,7 +151,7 @@ Response :
 Request :
 
 - Method : PUT
-- Endpoint : `/profile/edit`
+- Endpoint : `/profile/change_password`
 - Header :
   - Content-Type: application/json
   - Accept: application/json
