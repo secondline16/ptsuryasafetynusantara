@@ -133,47 +133,7 @@ Response :
   "data": {
     "id": "integer, unique",
     "username": "string, nullable",
-    "fullname": "string, null",
-    "email": "string, unique",
-    "phone": "string, nullable",
-    "address": "string, nullable",
-    "photo": "string",
-    "api_token": "string"
-  }
-}
-```
-
-### Change Password
-
-Request :
-
-- Method : PUT
-- Endpoint : `/profile/change_password`
-- Header :
-  - Content-Type: application/json
-  - Accept: application/json
-- Body :
-
-```json
-{
-  "old_password": "string",
-  "new_password": "string",
-  "confirm_password": "string"
-}
-```
-
-Response :
-
-```json
-{
-  "meta": {
-    "code": "integer",
-    "message": "string"
-  },
-  "data": {
-    "id": "integer, unique",
-    "username": "string, nullable",
-    "fullname": "string, null",
+    "name": "string, null",
     "email": "string, unique",
     "phone": "string, nullable",
     "address": "string, nullable",
@@ -217,7 +177,7 @@ Response :
 Request :
 
 - Method : GET
-- Endpoint : `/jobs`
+- Endpoint : `/vacancies`
 - Header :
   - Content-Type: application/json
   - Accept: application/json
@@ -252,7 +212,7 @@ Response :
 Request :
 
 - Method : GET
-- Endpoint : `/job/{id}`
+- Endpoint : `/vacancies/{id}`
 - Header :
   - Content-Type: application/json
   - Accept: application/json
@@ -270,8 +230,8 @@ Response :
     "company_name": "string, nullable",
     "job_position": "string, nullable",
     "deadline": "string, [2020-07-09 23:18:01]",
-    "description": "string, nullable",
-    "requirements": "string, nullable"
+    "job_description": "string, nullable",
+    "job_requirements": "string, nullable"
 }
 ```
 
