@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilPerusahaan"
+    android:gravity="top"
+    android:layout_margin="25sp"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/logo"
+                android:src="@drawable/logo_pt"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:id="@+id/tentang_kami"
+                android:text="Tentang Kami"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tentang_kami"
+                android:id="@+id/deskripsi"
+                android:layout_margin="3dp"
+                android:background="@drawable/rectangle_root"
+                android:elevation="3dp"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desc"
+                    android:text="PT Surya Safety Nusantara adalah perusahaan yang bergerak di bidang layanan penyedia jasa konsultasi dan pelatihan yang berdedikasi untuk mendukung organisasi di semua sektor bisnis, industri, dan pemerintahan."
+                    android:justificationMode="inter_word"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/desc"
+                    android:text="Kami menyediakan Jasa Keselamatan dan Kesehatan Kerja (K3) yang berada di bawah Kementrian Ketenagakerjaan Republik Indonesia sesuai dengan Permenaker RI No 4 Tahun 1995 tentang Perusahaan Jasa Keselamatan dan Kesehatan Kerja."
+                    android:justificationMode="inter_word"
+                    android:layout_margin="5dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deskripsi"
+                android:id="@+id/visi_misi"
+                android:text="Visi Misi Perusahaan"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/visi_misi"
+                android:id="@+id/isi_visi_misi"
+                android:background="@drawable/rectangle_root"
+                android:elevation="3dp"
+                android:padding="5dp"
+                android:layout_margin="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/visi">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Visi   :  "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="Menjadi perusahaan yang terpercaya dan profesional dalam dunia K3 serta meningkatkan sumber daya manusia untuk kemajuan bersama."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/visi"
+                    android:id="@+id/misi">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/isi_misi"
+                        android:text="Misi  :  "/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/isi_misi_1"
+                            android:justificationMode="inter_word"
+                            android:text="Memberikan service excellent dalam pelaksanaan pemeriksaan, pengujian, sertifikasi, training dan konsultasi yang profesional serta mengacu pada peraturan yang berlaku."/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/isi_misi_1"
+                            android:id="@+id/isi_misi_2"
+                            android:justificationMode="inter_word"
+                            android:text="Ikut serta dalam peningkatan mutu sumber daya manusia yang unggul."/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/isi_misi_2"
+                            android:text="Menciptakan lingkungan yang berdampak positif untuk kemajuan manusia."/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_below="@id/isi_visi_misi"
+                android:id="@+id/moto"
+                android:text="Moto Perusahaan"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moto"
+                android:id="@+id/isi_moto"
+                android:text="Meningkatkan kualitas layanan kami dari waktu ke waktu dan selalu berusaha untuk memberikan semua yang terbaik untuk klien kami, kepercayaan anda adalah kebanggaan kami."
+                android:justificationMode="inter_word"
+                android:background="@drawable/rectangle_root"
+                android:padding="5dp"
+                android:elevation="3dp"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isi_moto"
+                android:id="@+id/jasa"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Jasa Pelatihan"
+                android:layout_marginTop="17dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jasa"
+                android:id="@+id/isi_jasa"
+                android:background="@drawable/rectangle_root"
+                android:padding="5dp"
+                android:elevation="3dp"
+                android:layout_margin="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/isi_jasa_1"
+                    android:justificationMode="inter_word"
+                    android:text="a. Training of Kemnaker RI"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/isi_jasa_2"
+                    android:layout_below="@id/isi_jasa_1"
+                    android:text="b. Internal Training"
+                    android:justificationMode="inter_word"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/isi_jasa_3"
+                    android:layout_below="@id/isi_jasa_2"
+                    android:justificationMode="inter_word"
+                    android:text="c. Training Bnsp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/isi_jasa_4"
+                    android:layout_below="@id/isi_jasa_3"
+                    android:justificationMode="inter_word"
+                    android:text="d. Consulting Certification"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isi_jasa"
+                android:id="@+id/kontak_kami"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Kontak Kami"
+                android:layout_marginTop="17dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kontak_kami"
+                android:id="@+id/isi_kontak_kami"
+                android:background="@drawable/rectangle_root"
+                android:elevation="3dp"
+                android:padding="5dp"
+                android:layout_margin="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/alamat">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat   :  "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="Makam 03/02, Rembang, Purbalingga, Jawa Tengah"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alamat"
+                    android:id="@+id/kontak">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kontak   :  "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="+62822-5513-6302"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kontak"
+                    android:id="@+id/email">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32.6dp"
+                        android:text="Email     :  "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="suryasafety.nusantara@gmail.com"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

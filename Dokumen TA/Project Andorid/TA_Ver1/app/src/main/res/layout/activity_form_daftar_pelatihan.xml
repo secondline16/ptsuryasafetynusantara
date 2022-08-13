@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormDaftarPelatihan"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/background"
+        android:background="@drawable/rectangle_root"
+        android:elevation="3dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/skema"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle_root"
+            android:elevation="3dp"
+            android:hint="Skema Pelatihan"
+            android:padding="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/skema"
+            android:id="@+id/transaksi"
+            android:backgroundTint="@color/abuabu"
+            android:textColor="@color/black"
+            android:text="Upload Bukti Pembayaran"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/background">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_daftar"
+            android:backgroundTint="@color/biru"
+            android:textSize="16sp"
+            android:text="Daftar Pelatihan"/>
+    </RelativeLayout>
+</RelativeLayout>
