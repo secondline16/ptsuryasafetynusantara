@@ -71,7 +71,7 @@ Response :
 }
 ```
 
-### Pengaturan Akun
+### Pengaturan Akun (Get User Data)
 
 Request :
 
@@ -92,7 +92,7 @@ Response :
   "data": {
     "id": "integer, unique",
     "username": "string, nullable",
-    "fullname": "string, nullable",
+    "name": "string, nullable",
     "email": "string, unique",
     "phone": "string, nullable",
     "address": "string, nullable",
@@ -102,7 +102,7 @@ Response :
 }
 ```
 
-### Edit Akun
+### Edit Akun (PUT Edit Profile)
 
 Request :
 
@@ -143,7 +143,7 @@ Response :
 }
 ```
 
-### UPLOAD Avatar PHOTO
+### UPLOAD Avatar PHOTO (POST Edit Avatar)
 
 Request :
 
@@ -172,7 +172,7 @@ Response :
 }
 ```
 
-### List Lowongan Pekerjaan
+### List Lowongan Pekerjaan (GET List Vacancies)
 
 Request :
 
@@ -207,12 +207,12 @@ Response :
 }
 ```
 
-### Detail Lowongan Pekerjaan
+### Detail Lowongan Pekerjaan (Get Detail Vacancies)
 
 Request :
 
 - Method : GET
-- Endpoint : `/vacancies/{id}`
+- Endpoint : `/vacancy/{id}`
 - Header :
   - Content-Type: application/json
   - Accept: application/json
@@ -235,7 +235,7 @@ Response :
 }
 ```
 
-### List Daftar Pelatihan
+### List Daftar Pelatihan (GET List Trainings)
 
 Request :
 
@@ -272,7 +272,7 @@ Response :
 }
 ```
 
-### Detail Pelatihan
+### Detail Pelatihan (GET Detail Trainings)
 
 Request :
 
@@ -298,12 +298,12 @@ Response :
     "training_end": "string, nullable [2020-07-09 23:18:01]",
     "training_price": "integer, nullable",
     "training_desc": "integer, nullable",
-    "training_status": "boolean [true=Sudah Pernah daftar pelatihan, false=belum pernah daftar pelatihan]"
+    "status": "boolean [true=Sudah Pernah daftar pelatihan, false=belum pernah daftar pelatihan]"
     }
 }
 ```
 
-### Form Daftar Pelatihan
+### Form Daftar Pelatihan (POST Register Training)
 
 Request :
 
@@ -334,7 +334,7 @@ Response :
 }
 ```
 
-### List Pelatihan Diikuti
+### List Pelatihan Diikuti (GET List Trainings Records)
 
 Request :
 
@@ -356,18 +356,18 @@ Response :
       {
         "id": "integer",
         "training_name": "string, nullable",
-        "training_status": "string"
+        "status": "string"
       },
       {
         "id": "integer",
         "training_name": "string, nullable",
-        "training_status": "string"
+        "status": "string"
       },
   ]
 }
 ```
 
-### Detail Pelatihan Diikuti
+### Detail Pelatihan Diikuti (GET Detail Trainings Records)
 
 Request :
 
@@ -394,9 +394,9 @@ Response :
         "training_start": "string, nullable",
         "training_end": "string, nullable",
         "trainer_name": "string, nullable",
-        "training_status": "string, [Selesai, Belum Selesai]",
+        "status": "string, [Selesai, Belum Selesai]",
         "trainer_cv": "string, url",
-        "training_book": "string, url",
+        "training_materials": "string, url",
         "requirement_status": "string, [Lengkap, Belum Lengkap]",
         "training_certificate": "string, url [pdf]",
         "competence_certificate": "string, url [pdf]"
@@ -405,7 +405,7 @@ Response :
 }
 ```
 
-### UPLOAD PERSYARATAN
+### UPLOAD PERSYARATAN (POST UPLOAD Training Requirements)
 
 Request :
 
