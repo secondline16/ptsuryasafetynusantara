@@ -339,7 +339,7 @@ Response :
 Request :
 
 - Method : GET
-- Endpoint : `/followup_training` [training_records]
+- Endpoint : `/followup_trainings` [training_records]
 - Header :
   - Content-Type: application/json
   - Accept: application/json
@@ -372,7 +372,7 @@ Response :
 Request :
 
 - Method : GET
-- Endpoint : `/training/{training_record_id}`
+- Endpoint : `/followup_training/{training_record_id}`
 - Header :
   - Content-Type: application/json
   - Accept: application/json
@@ -410,7 +410,7 @@ Response :
 Request :
 
 - Method : POST
-- Endpoint : `/training/requirement [upload]`
+- Endpoint : `/training/requirements [upload]`
 - Header :
   - Content-Type: application/json
   - Accept: application/json
